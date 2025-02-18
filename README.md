@@ -1,0 +1,2 @@
+# vc_webhook_receiver
+fastapiを用いてVirtualCryptoのwebhookを受け取る例みたいなやつ
