@@ -16,8 +16,10 @@ async def Webhook_post(request: Request, webhook: WebhookPost):
     if not webhook_verify(request_body, request_signature, request_timestamp, config.VirtualCrypto.PUBLIC_KEY):
         raise HTTPException(401, "Bad request signature")
 
-    if abs(time() - request_timestamp) > 20:
-        raise HTTPException(401, "Your watch is broken")
+    timestamp_error = abs(time() - float(request_timestamp)) > 15
+    
+    if timestamp_error:
+        raise HTTPException(401, f"Your watch is broken ({timestamp_error})")
 
     if webhook.type == 1: # PING
         return {"type":1} # PONG
