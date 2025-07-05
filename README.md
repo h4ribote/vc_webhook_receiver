@@ -21,8 +21,3 @@ fastapiを用いてVirtualCryptoのwebhookを受け取る例みたいなやつ
    ```
 6. VirtualCryptoでWebhookの"webhookを受け取るurl"を指定して保存(設定が正常に保存されていることを確認すること)
 7. 好みの処理(やりたかったあんなことやこんなこと！)を追記していく
-   
-   > 面白いものを作成していただくことができればこれにまさる喜びはありません。
-   >   \-  [VirtualCrypto API](https://github.com/virtualCrypto-discord/virtualcrypto-docs/blob/master/docs/Api.md)
-
-   腹がよじれるほど面白い(?)ものを作ってあげてください
